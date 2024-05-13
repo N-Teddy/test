@@ -3,7 +3,7 @@ import Nav from "@/Components/Frontend/Nav/Nav";
 import SideBar from "@/Components/Frontend/SideBar/SideBar";
 import Aside from "@/Components/Frontend/Aside/Aside";
 import Footer from "@/Components/Frontend/Footer/Footer";
-import styles from './Home.module.css'
+// import styles from './Home.module.css'
 import Card from "@/Components/Frontend/Card/Card";
 
 export default function Home() {
