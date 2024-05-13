@@ -1,0 +1,40 @@
+.card {
+    width: 219px;
+    background-color: rgb(247, 247, 247);
+}
+
+.product_name:hover,
+.product_store:hover {
+    color: #ff3e20;
+}
+
+.menu {
+    left: 8px;
+}
+
+.menu_container:hover .menu div {
+    transform: translate(0px, 0px);
+}
+
+.menu div {
+    transform: translate(-50px, 0px)
+}
+
+.icon_1 {
+    transition: all 0.5s linear 0.1s;
+}
+
+.icon_2 {
+    transition: all 0.5s linear 0.2s;
+}
+.icon_3 {
+    transition: all 0.5s linear 0.3s;
+}
+.icon_4 {
+    transition: all 0.5s linear 0.4s;
+}
+
+.icon:hover span:last-of-type {
+    display: block;
+    background-color: rgb(175, 175, 175);
+}

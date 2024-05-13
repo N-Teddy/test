@@ -1,0 +1,15 @@
+.store_wrapper{
+    width: 369px;
+    height: 284px;
+    box-shadow: 0 0 5px rgb(190, 190, 190);
+}
+
+.store_header {
+    height: 220px;
+    width: 100%;
+}
+
+.image_container {
+    top: -70px;
+    right: 20px;
+}

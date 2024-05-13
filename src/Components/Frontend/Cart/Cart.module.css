@@ -1,0 +1,31 @@
+.product {
+    border-bottom: 0.8px solid rgb(229, 232, 236);
+}
+
+.product input::-webkit-outer-spin-button,
+.product input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.product input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.quantity span {
+    color: rgb(115, 122, 125);
+}
+
+.quantity span:hover {
+    color: #2b38d1;
+    cursor: pointer;
+}
+
+.quantity input:focus {
+    outline-color: #2b38d1;
+}
+
+tbody .name:hover {
+    color: #2b38d1;
+}

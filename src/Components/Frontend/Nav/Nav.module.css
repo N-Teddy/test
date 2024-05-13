@@ -1,0 +1,59 @@
+.header_top {
+     border-bottom: 0.667px solid rgb(229, 232, 236);
+
+}
+
+
+.header input:focus {
+     outline: 0;
+}
+
+.container {
+     width: 93%;
+     margin: auto;
+}
+
+.dropdown_menu {
+     display: block;
+     opacity: 0;
+     visibility: hidden;
+     transition: all 0.5s ease-out;
+     margin-top: 10px;
+     padding: 10px 20px;
+     min-width: 130px;
+     box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.2);
+     right: 0;
+     left: auto;
+     top: 50px;
+     z-index: 100;
+     background-color: white;
+     font-size: 12px;
+     position: absolute;
+}
+
+.dropdown_menu li {
+     padding: 5px 0;
+     color: #495057;
+}
+
+.dropdown_menu li:hover {
+     color: #ff3e20;
+}
+
+.drop_container:hover .dropdown_menu,
+.drop_container:hover button {
+     opacity: 1;
+     visibility: visible;
+     top: 27px;
+     color: #ff3e20;
+}
+
+.mid_nav li:hover,
+.log span:hover {
+     color: #ff3e20;
+     cursor: pointer;
+}
+
+.icons:hover {
+     color: #ff3e20;
+}

@@ -1,0 +1,38 @@
+.aside {
+     width: 224px;
+     flex-shrink: 0;
+}
+
+.categories {
+     box-shadow: 0 0 5px rgb(190, 190, 190);
+}
+
+.aside_ul li {
+     padding: 9px 15px;
+     display: flex;
+     align-items: center;
+     gap: 4px;
+}
+
+.aside_ul li:hover {
+     color: #ff3e20;
+     cursor: pointer;
+     box-shadow: 0 0 5px rgb(190, 190, 190);
+}
+
+.h3 {
+     color: #222;
+     font-weight: 700;
+     border-bottom: 2px solid rgb(184, 184, 184);
+}
+
+.item {
+     padding-bottom: 15px;
+     margin-bottom: 15px;
+     width: 100%;
+}
+
+.quality section:hover {
+     color: #ff3e20;
+     cursor: pointer;
+}

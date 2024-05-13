@@ -1,0 +1,42 @@
+.main {
+     background-color: #232f3e;
+     color: white;
+}
+
+.main input:focus {
+     outline: none;
+}
+
+.container {
+     width: 93%;
+     margin: auto;
+}
+
+.icons,
+.google {
+     position: relative;
+}
+
+.icons::after {
+     content: '';
+     width: 1px;
+     height: 15px;
+     background-color: rgb(183, 183, 183);
+     position: absolute;
+     right: -10px;
+     top: 6px;
+}
+
+.google::after {
+     content: '';
+     width: 1px;
+     height: 15px;
+     background-color: rgb(183, 183, 183);
+     position: absolute;
+     right: -10px;
+     top: 11px;
+}
+
+.icon_container span:hover {
+     color: #ff3e20;
+}
