@@ -1,0 +1,31 @@
+.container {
+    width: 93%;
+    margin: auto;
+}
+
+.color {
+    background-color: rgb(35, 47, 62);
+}
+
+.ul li {
+    position: relative;
+}
+
+.ul li::after {
+    position: absolute;
+    content: ' ';
+    width: 0;
+    height: 2px;
+    background-color: #ff3e20;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s linear 0s;
+}
+
+.ul li:hover::after {
+    width: 100%;
+}
+
+.ul li:hover {
+    color: #ff3e20;
+}
