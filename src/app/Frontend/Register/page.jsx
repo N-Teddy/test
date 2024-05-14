@@ -6,9 +6,9 @@ import PageTitle from '@/Components/Frontend/PageTitle/PageTitle'
 
 export default function page() {
     return (
-        <main>
+        <main className='main'>
             <Nav />
-            <section className={`my-10`}>
+            <section>
                 <div>
                     <PageTitle />
                 </div>

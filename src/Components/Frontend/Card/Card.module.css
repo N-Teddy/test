@@ -21,20 +21,25 @@
 }
 
 .icon_1 {
-    transition: all 0.5s linear 0.1s;
+    transition: all 0.3s ease-in-out 0.1s;
 }
 
 .icon_2 {
-    transition: all 0.5s linear 0.2s;
+    transition: all 0.3s ease-in-out 0.2s;
 }
 .icon_3 {
-    transition: all 0.5s linear 0.3s;
+    transition: all 0.3s ease-in-out 0.3s;
 }
 .icon_4 {
-    transition: all 0.5s linear 0.4s;
+    transition: all 0.3s ease-in-out 0.4s;
 }
 
 .icon:hover span:last-of-type {
     display: block;
-    background-color: rgb(175, 175, 175);
+}
+
+.icon:hover span:first-of-type {
+    border-color: #2b38d1;
+    background-color: #2b38d1;
+    color: white !important;
 }

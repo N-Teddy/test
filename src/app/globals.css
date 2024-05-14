@@ -2,11 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-
-/* font-family: "Roboto", sans-serif; */
 
 * {
   font-family: "Bai Jamjuree", sans-serif;
@@ -17,9 +13,14 @@
   border: none;
 }
 
-.primary_color {
+li {
+  list-style: none;
+}
+
+.primary-color {
   color: #212529;
 }
+
 
 .color_blue {
   color: #2b38d1;
@@ -33,7 +34,7 @@
   background-color: rgb(221, 56, 66);
 }
 
-.secondary color {
+.secondary-color {
   color: #8d979e;
 }
 
@@ -45,6 +46,10 @@
   border-color: rgb(229, 232, 236);
 }
 
+.bb-color {
+  border-color: #2b38d1;
+}
+
 .container {
   width: 93%;
   margin-left: auto;
@@ -52,5 +57,9 @@
 }
 
 .content {
+  background-color: rgb(241, 245, 246);
+}
+
+.main {
   background-color: rgb(241, 245, 246);
 }

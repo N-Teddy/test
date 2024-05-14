@@ -1,15 +1,11 @@
-.main {
-     background-color: #232f3e;
-     color: white;
-}
 
 .main input:focus {
      outline: none;
+     border-color: #2b38d1;
 }
 
-.container {
-     width: 93%;
-     margin: auto;
+.main {
+     width: 390px;
 }
 
 .icons,
@@ -38,5 +34,15 @@
 }
 
 .icon_container span:hover {
-     color: #ff3e20;
+     color: #2b38d1;
+}
+
+.h3::after {
+     content: '';
+     position: absolute;
+     height: 2px;
+     width: 60px;
+     top: 24px;
+     left: 0;
+     background-color: #2b38d1;
 }

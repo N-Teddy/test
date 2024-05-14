@@ -7,40 +7,40 @@ import { BsTwitterX } from "react-icons/bs";
 export default function NewsLetter() {
      return (
           <section>
-               <div className={`py-10 ${styles.main}`}>
-                    <div className={`${styles.container}`}>
-                         <div className={`flex justify-between items-center`}>
-                              <div className={`flex gap-4 w-80`}>
-                                   <div>
-                                        <FaPaperPlane size={40}/>
-                                   </div>
-                                   <div>
-                                        <p className={`text-2xl font-bold`}>Signup For Newsletter</p>
-                                        <p className={`text-sm`}>We’ll never share your email address with a third-party.</p>
-                                   </div>
+               <div className={`${styles.main}`}>
+                    <div className={`flex flex-col gap-3`}>
+                         <div className={`flex gap-4`}>
+                              <div>
+                                   <FaPaperPlane size={25} />
                               </div>
-                              <div className={`flex mr-28`}>
-                                   <div>
-                                        <input type="text" className={`py-2 text-md w-80 pl-3 text-gray-500 rounded-l-sm`} placeholder='Your email address' />
-                                   </div>
-                                   <div>
-                                        <button className={`bg-red-600 py-2 rounded-r-sm text-md px-5`}>Subscribe</button>
-                                   </div>
+                              <div>
+                                   <p className={`text-sm text-gray-800 font-bold  ${styles.h3} relative mb-6 pb-2`}>SIGN UP TO NEWSLETTER</p>
                               </div>
-                              <div className={`flex gap-6 items-center ${styles.icon_container}`}>
-                                   <span className={`${styles.icons}`}>
-                                        <FaFacebook size={25}/>
-                                   </span>
-                                   <span className={`${styles.icons}`}>
-                                        <BsTwitterX size={25} />
-                                   </span>
-                                   <span className={`${styles.google}`}>
-                                        <FaGooglePlusG size={35} />
-                                   </span>
-                                   <span>
-                                        <FaPinterest size={25} />
-                                   </span>
+                         </div>
+                         <div>
+                              <p className={`text-sm`}>Join 20.000+ subscribers and get a new discount coupon on every Saturday. Updates information on Sales and Offers.</p>
+                         </div>
+                         <div className={`flex gap-2`}>
+                              <div>
+                                   <input type="text" className={`py-2 b-color border-1 border-solid text-md rounded-3xl w-60 pl-3 text-gray-500`} placeholder='Your email address' />
                               </div>
+                              <div>
+                                   <button className={`bg-blue py-2 text-white rounded-3xl text-md px-5`}>Subscribe</button>
+                              </div>
+                         </div>
+                         <div className={`flex gap-6 items-center justify-center ${styles.icon_container}`}>
+                              <span className={`${styles.icons}`}>
+                                   <FaFacebook size={28} />
+                              </span>
+                              <span className={`${styles.icons}`}>
+                                   <BsTwitterX size={25} />
+                              </span>
+                              <span className={`${styles.google}`}>
+                                   <FaGooglePlusG size={35} />
+                              </span>
+                              <span>
+                                   <FaPinterest size={25} />
+                              </span>
                          </div>
                     </div>
                </div>

@@ -3,18 +3,18 @@ import Nav from "@/Components/Frontend/Nav/Nav";
 import SideBar from "@/Components/Frontend/SideBar/SideBar";
 import Aside from "@/Components/Frontend/Aside/Aside";
 import Footer from "@/Components/Frontend/Footer/Footer";
-// import styles from './Home.module.css'
+import styles from './Home.module.css'
 import Card from "@/Components/Frontend/Card/Card";
 
 export default function Home() {
   return (
-   <main className={`relative`}>
+   <main className={`relative main`}>
       <Nav />
       <section className={`flex justify-center `}>
         <div className={`overflow-visible flex gap-8 ${styles.container}`}>
           <Aside />
           <section className={` w-full`}>
-            <section className={`pt-9`}>
+            <section className={``}>
               <div className={`flex gap-4`}>
                 <img src="https://opencart4.magentech.com/themes/so_emarket/image/cache/catalog/slideshow/home1/slider-3-950x450.jpg" width={647} height={303} alt="" />
                 <div className={`flex flex-wrap gap-4`}>

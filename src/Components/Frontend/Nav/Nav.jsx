@@ -4,14 +4,15 @@ import { FaLock } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoSearch } from "react-icons/io5";
 import { TfiReload } from "react-icons/tfi";
-import { FaHeart } from "react-icons/fa";
-import { HiShoppingBag } from "react-icons/hi2";
+import { FiHeart } from "react-icons/fi";
+import { AiOutlineShoppingCart } from "react-icons/ai";
+import { IoPersonCircleOutline } from "react-icons/io5";
 import Link from 'next/link';
 
 
 export default function Nav() {
      return (
-          <header className={`${styles.header} bg-white `}>
+          <header className={`${styles.header} bg-white mb-5`}>
                <section className={`${styles.header_top} text-xs primary_color font-medium`}>
                     <div className={`container`}>
                          <div className={`${styles.row} flex justify-between`}>
@@ -50,15 +51,52 @@ export default function Nav() {
                          </div>
                     </div>
                </section>
-               <section className={`${styles.header_middle} pt-7 pb-6`}>
+               <section className={`${styles.header_middle} py-2.5`}>
                     <div className={`container`}>
                          <div className={`${styles.row} text-sm flex justify-between items-center`}>
                               <div>
-                                   <img src="https://opencart4.magentech.com/themes/so_emarket/image/catalog/logo.png" alt="" />
+                                   <img src="https://opencart4.magentech.com/themes/so_emarket/image/catalog/logo-footer.png" alt="" />
                               </div>
-                              <div className={`font-semibold text-base`}>
+                              {/*  */}
+                              <div className={`flex mr-10 items-center ${styles.search_container}  font-semibold text-sm  relative`}>
+                                   <div className={`absolute py-2.5 px-6 rounded-l-md text-gray-700`}>All Categories</div>
+                                   <div>
+                                        <input className={` pl-48 pr-32 rounded-md  py-2.5  text-gray-500`} type="text" placeholder='Search for products' name="" id="" />
+                                   </div>
+                                   <div className={`absolute right-0 py-2.5 px-7 bg-blue rounded-r-md text-white font-semibold text-sm`}>Search</div>
+                              </div>
+
+                              <div className={` `}>
+                                   <li className={`relative ${styles.drop_container}`}>
+                                        <button className={`flex font-semibold primary-color items-center gap-xs`}>
+                                             <IoPersonCircleOutline size={37} />
+                                             Account
+                                        </button>
+                                        <div className={`${styles.dropdown_menu}`}>
+                                             <ul>
+                                                  <li>LOGIN</li>
+                                                  <li>REGISTER</li>
+                                             </ul>
+                                        </div>
+                                   </li>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+               <section className={`${styles.header_bottom}`}>
+                    <div className={`container`}>
+                         <div className={`${styles.row} flex justify-between items-center`}>
+                              <div>
+                                   <button className={`flex primary-color items-center px-3 py-2.5 gap-3 rounded-md`}>
+                                        <GiHamburgerMenu />
+                                        ALL CATEGORIES
+                                        <IoIosArrowDown />
+                                   </button>
+                              </div>
+                              {/*  */}
+                              <div className={`font-semibold text-sm primary-color`}>
                                    <nav className={`${styles.mid_nav}`}>
-                                        <ul className={`flex  py-4 gap-6`}>
+                                        <ul className={`flex  py-2.5 gap-6`}>
                                              <li>
                                                   <Link href='/'>Home</Link>
                                              </li>
@@ -82,49 +120,21 @@ export default function Nav() {
                                         </ul>
                                    </nav>
                               </div>
-                              <div className={`pl-7 font-thin  py-4 ${styles.log}`}>
-                                   <p className={`flex gap-1`}>
-                                        <span className='flex items-center'>
-                                             <FaLock size={10} />  
-                                             <Link href='/Frontend/LogIn'>Login</Link>
-                                        </span>
-                                        or             
-                                        <span> 
-                                             <Link href='/Frontend/Register'>Register</Link>
-                                        </span>
-                                   </p>
-                              </div>
-                         </div>
-                    </div>
-               </section>
-               <section className={`${styles.header_bottom} pb-5`}>
-                    <div className={`container`}>
-                         <div className={`${styles.row} flex justify-between items-center`}>
+                              {/*  */}
                               <div>
-                                   <button className={`flex items-center px-4 py-2 gap-3 bg-red-600 rounded-md`}>
-                                        <GiHamburgerMenu />
-                                        ALL CATEGORIES
-                                        <IoIosArrowDown />
-                                   </button>
-                              </div>
-                              <div>
-                                   <div className={`flex mr-20`}>
-                                        <div className={`py-2 pl-3 pr-8 flex items-center text-sm bg-gray-200 rounded-l-sm text-gray-500`}>All Categories</div>
-                                        <div>
-                                             <input className={`py-2 pl-3 text-gray-500 w-80`} type="text" placeholder='Search' name="" id="" />
+                                   <div className={`flex gap-6 items-center`}>
+                                        <div className={`${styles.icons}`}><TfiReload size={20} /></div>
+                                        <div className={`${styles.icons}`}>
+                                             <Link href='/Frontend/WishList'><FiHeart size={25} /></Link>
                                         </div>
-                                        <div className={`py-2 bg-red-600 flex items-center rounded-r-sm px-9`}>
-                                             <IoSearch />
-                                        </div>
-                                   </div>
-                              </div>
-                              <div>
-                                   <div className={`flex gap-8`}>
-                                        <div className={`${styles.icons}`}><TfiReload size={25}/></div>
-                                        <div className={`${styles.icons}`}><FaHeart size={25} /></div>
-                                        <div className={`flex items-center ${styles.icons}`}>
-                                             <div><HiShoppingBag size={25} /></div>
-                                             <p className={`text-sm pl-2`}>MY CARD <span className={`text-xs text-red-600 pl-2`}>-0.00€</span></p>
+                                        <div className={`flex items-center ${styles.icons} flex gap-1 items-center`}>
+                                             <div>
+                                                  <AiOutlineShoppingCart size={30} />
+                                             </div>
+                                             <div>
+                                                  <p className={`text-xs`}>Your Card</p>
+                                                  <p className={`text-sm`}>$0.00</p>
+                                             </div>
                                         </div>
                                    </div>
                               </div>

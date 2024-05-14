@@ -24,7 +24,7 @@
 }
 
 .ul li:hover {
-     color: #ff3e20;
+     color: #2b38d1;
 }
 
 .ul li::before {
@@ -39,7 +39,7 @@
      width: 60px;
      top: 24px;
      left: 0;
-     background-color: #ff3e20;
+     background-color: #2b38d1;
 }
 
 .bottom_ul {
@@ -56,10 +56,10 @@
      content: '';
      position: absolute;
      width: 1.5px;
-     height: 12px;
+     height: 10px;
      bottom: 4px;
      right: -2px;
-     background-color: rgb(167, 167, 167);
+     background-color: rgb(199, 199, 199);
 }
 
 .quality::after {
@@ -72,7 +72,6 @@
      top: 0;
 }
 
-.container section:hover div:first-of-type,
-.container section:hover p:first-of-type {
-     color: #ff3e20;
+.qualities div:first-of-type {
+     color: #2b38d1;
 }

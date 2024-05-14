@@ -19,6 +19,7 @@
 .form_row input {
     padding: 11px 19px;
     background-color: rgb(241, 245, 246);
+    background-color: white;
     color: gray;
     border-radius: 30px;
     width: 100%;

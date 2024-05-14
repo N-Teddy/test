@@ -3,9 +3,14 @@
 
 }
 
+.header_bottom {
+     border-bottom: 0.667px solid rgb(229, 232, 236);
+}
+
 
 .header input:focus {
      outline: 0;
+     border-color: #2b38d1;
 }
 
 .container {
@@ -56,4 +61,28 @@
 
 .icons:hover {
      color: #ff3e20;
+}
+
+.header_middle input {
+     width: 612px;
+     height: 1;
+     border: 1.5px solid rgb(229, 232, 236);
+}
+
+.search_container {
+     width: 662px;
+}
+
+.search_container div:first-of-type::after {
+     content: "";
+     width: 1px ;
+     height: 17px;
+     top: 12px;
+     background-color: #8d979e;
+     position: absolute;
+     right: 0;
+}
+
+.header_middle {
+     border-bottom: 0.667px solid rgb(229, 232, 236);
 }
