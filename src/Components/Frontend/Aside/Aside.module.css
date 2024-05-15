@@ -15,7 +15,7 @@
 }
 
 .aside_ul li:hover {
-     color: #ff3e20;
+     color: #2b38d1;
      cursor: pointer;
      box-shadow: 0 0 5px rgb(190, 190, 190);
 }
@@ -33,6 +33,6 @@
 }
 
 .quality section:hover {
-     color: #ff3e20;
+     color: #2b38d1;
      cursor: pointer;
 }

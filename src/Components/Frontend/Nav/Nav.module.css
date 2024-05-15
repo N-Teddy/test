@@ -42,7 +42,7 @@
 }
 
 .dropdown_menu li:hover {
-     color: #ff3e20;
+     color: #2b38d1;
 }
 
 .drop_container:hover .dropdown_menu,
@@ -50,17 +50,17 @@
      opacity: 1;
      visibility: visible;
      top: 27px;
-     color: #ff3e20;
+     color: #2b38d1;
 }
 
 .mid_nav li:hover,
 .log span:hover {
-     color: #ff3e20;
+     color: #2b38d1;
      cursor: pointer;
 }
 
 .icons:hover {
-     color: #ff3e20;
+     color: #2b38d1;
 }
 
 .header_middle input {
