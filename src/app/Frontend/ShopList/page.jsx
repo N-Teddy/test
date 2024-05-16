@@ -9,7 +9,7 @@ import PageTitle from '@/Components/Frontend/PageTitle/PageTitle';
 export default function page() {
     return (
 
-        <main>
+        <main className={`main`}>
             <Nav />
             <section className={` my-10`}>
                 <div>
@@ -17,11 +17,11 @@ export default function page() {
                 </div>
                 <section>
                     <section className={`${styles.container}`}>
-                        <section className={`p-5 flex justify-between items-center ${styles.head}`}>
+                        <section className={`p-5 flex justify-between items-center ${styles.head} bg-white`}>
                             <div className={`text-sm`}>Total stores showing: <span>16</span></div>
                             <div className={`flex items-center gap-8`}>
                                 <div>
-                                    <button className={`flex items-center px-6 py-2 bg-red-500 gap-3 rounded-full`}>
+                                    <button className={`flex items-center px-6 py-2 bg-blue text-white gap-3 rounded-full`}>
                                         <IoFilter />
                                         Filter
                                     </button>

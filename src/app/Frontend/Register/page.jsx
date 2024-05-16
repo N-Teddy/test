@@ -6,7 +6,7 @@ import PageTitle from '@/Components/Frontend/PageTitle/PageTitle'
 
 export default function page() {
     return (
-        <main className='main'>
+        <main>
             <Nav />
             <section>
                 <div>
@@ -72,7 +72,7 @@ export default function page() {
                                 </div>
                             </div>
                             <div>
-                                <button className={`${styles.button}`}>Register</button>
+                                <button className={`${styles.button}`}>REGISTER</button>
                             </div>
                         </form>
                     </div>

@@ -15,7 +15,7 @@ import { HiOutlineClipboardDocumentList } from "react-icons/hi2";
 
 export default function Mid() {
      return (
-          <section>
+          <section className={`${styles.parent}`}>
                <div className={`${styles.container} ${styles.qualities}`}>
                     <div className={`px-4 py-7 flex border-0 border-b border-solid border-gray-200`}>
                          <section className={`flex flex-col gap-1 items-center w-56 ${styles.quality} relative`}>

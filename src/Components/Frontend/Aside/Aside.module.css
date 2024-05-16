@@ -1,10 +1,13 @@
 .aside {
-     width: 224px;
+     width: 240px;
      flex-shrink: 0;
+     border-radius: 5px;
 }
 
-.categories {
-     box-shadow: 0 0 5px rgb(190, 190, 190);
+.border_top {
+     padding-top: 22px;
+     margin-top: 22px;
+     border-top: 0.667px solid rgb(229, 232, 236);
 }
 
 .aside_ul li {
@@ -30,6 +33,7 @@
      padding-bottom: 15px;
      margin-bottom: 15px;
      width: 100%;
+     border-bottom: 0.667px solid rgb(229, 232, 236);
 }
 
 .quality section:hover {

@@ -1,0 +1,14 @@
+.detail_images {
+    height: 605px;
+}
+
+.border_bottom {
+    border-bottom: 0.667px solid rgb(229, 232, 236);
+    margin-bottom: 19px;
+    padding-bottom: 19px;
+}
+
+.ul li {
+    list-style: circle;
+    list-style-position: inside;
+}

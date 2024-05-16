@@ -5,9 +5,10 @@ import { FaEye } from "react-icons/fa";
 import { GoStack } from "react-icons/go";
 import { GoHeart } from "react-icons/go";
 
+
 export default function Card() {
     return (
-        <section className={`${styles.card} rounded-sm`}>
+        <section className={`${styles.card} rounded-sm `}>
             <div className={`p-4 relative`}>
                 <div className={`relative ${styles.menu_container}`}>
                     <img src="https://opencart4.magentech.com/themes/so_emarket/image/cache/catalog/demo/product/funiture/11-270x270.jpg" width={189} height={189} alt="" />
@@ -31,8 +32,8 @@ export default function Card() {
                     </div>
                 </div>
                 <div className={`pt-4 flex flex-col gap-2`}>
-                    <p className={`${styles.product_name} text-sm`}>Apple Airpods Pro M/A Bluetooth 7.1</p>
-                    <p className={`${styles.product_store} text-sm`}>Sold By <span className={`text-red-500 font-semibold`}>OvicSoft</span></p>
+                    <p className={`${styles.product_name} text-sm font-medium`}>Apple Airpods Pro M/A Bluetooth 7.1</p>
+                    <p className={`${styles.product_store} text-sm`}>Sold By <span className={`color_blue font-semibold`}>OvicSoft</span></p>
                     <div className={`${styles.product_rating} flex`}>
                         <FaRegStar />
                         <FaRegStar />
@@ -40,7 +41,7 @@ export default function Card() {
                         <FaRegStar />
                         <FaRegStar />
                     </div>
-                    <p className={`${styles.product_price} text-red-500`}>$219</p>
+                    <p className={`${styles.product_price} color_blue font-semibold`}>$219</p>
                 </div>
             </div>
         </section>

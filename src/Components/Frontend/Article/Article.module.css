@@ -6,3 +6,7 @@
 .description {
     width: 594px;
 }
+
+.author:hover {
+    color: #2b38d1;
+}

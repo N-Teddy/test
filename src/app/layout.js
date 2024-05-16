@@ -1,4 +1,12 @@
 import "./globals.css";
+import { Bai_Jamjuree } from 'next/font/google'
+
+export const bai_jamjuree_init = Bai_Jamjuree({
+     subsets: ['latin'],
+     display: 'swap',
+     variable: '--font-bai-jamjuree',
+     weight: '200',
+})
 
 
 export const metadata = {
@@ -9,7 +17,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className={`${bai_jamjuree_init.variable} bai_jamjuree`}>{children}</body>
     </html>
   );
 }

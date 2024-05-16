@@ -8,7 +8,7 @@ import { GiHeadphones } from "react-icons/gi";
 
 export default function Aside() {
      return (
-          <aside className={`${styles.aside}`}>
+          <aside className={`${styles.aside} bg-white`}>
                <div className={` flex flex-wrap w-full `}>
                     <section className={`mb-9 bg-white w-full ${styles.categories}`}>
                          <div>
@@ -56,14 +56,7 @@ export default function Aside() {
                               </ul>
                          </div>
                     </section>
-                    <section>
-                         <div className={`mb-10 `}>
-                              <div>
-                                   <img src="https://opencart4.magentech.com/themes/so_emarket/image/catalog/banners/banner4.jpg" alt="" />
-                              </div>
-                         </div>
-                    </section>
-                    <section className={`bg-white`}>
+                    <section className={`bg-white ${styles.border_top}`}>
                          <div>
                               <h3 className={`border-b border-solid mb-2 border-gray-500 border-0`}>LATEST PRODUCTS</h3>
                               <div className={`flex flex-wrap`}>
@@ -127,44 +120,7 @@ export default function Aside() {
                               </div>
                          </div>
                     </section>
-                    <section className={`w-full bg-white`}>
-                         <div className={` border border-gray-300 border-solid mt-5 mb-10 px-5 text-gray-600 text-sm ${styles.quality}`}>
-                              <section className={`flex py-6 gap-2 border-0 border-b border-gray-300 border-solid`}>
-                                   <div><FaFileAlt size={30} /></div>
-                                   <div>
-                                        <p className={` font-medium`}>FREE DELIVERY</p>
-                                        <p className={`text-gray-400`}>On order over</p>
-                                   </div>
-                              </section>
-                              <section className={`flex py-6 gap-2 border-0 border-b border-gray-300 border-solid`}>
-                                   <div><FaShieldAlt size={30} /></div>
-                                   <div>
-                                        <p className={` font-medium`}>ORDER PROTECTION</p>
-                                        <p className={`text-gray-400`}>Secured information</p>
-                                   </div>
-                              </section>
-                              <section className={`flex py-6 gap-2 border-0 border-b border-gray-300 border-solid`}>
-                                   <div><FaGift size={30} /></div>
-                                   <div>
-                                        <p className={`font-medium`}>PROMOTION GIFT</p>
-                                        <p className={`text-gray-400`}>Special offers</p>
-                                   </div>
-                              </section>
-                              <section className={`flex py-6 gap-2`}>
-                                   <div><FaRegMoneyBillAlt size={30} /></div>
-                                   <div>
-                                        <p className={`font-medium`}>MONEY BACK</p>
-                                        <p className={`text-gray-400`}>Return over 30days</p>
-                                   </div>
-                              </section>
-                         </div>
-                    </section>
-                    <section>
-                         <div className='mb-10'>
-                              <img src="https://opencart4.magentech.com/themes/so_emarket/image/catalog/banners/banner5.jpg" alt="" />
-                         </div>
-                    </section>
-                    <section className={`w-full bg-white`}>
+                    <section className={`w-full bg-white ${styles.border_top}`}>
                          <div>
                               <h3 className={`mb-2 ${styles.h3}`}>LATEST BLOGS</h3>
                               <div className={`mb-8`}>
@@ -181,20 +137,20 @@ export default function Aside() {
                               </div>
                          </div>
                     </section>
-                    <section className={`bg-white`}>
+                    <section className={`bg-white ${styles.border_top}`}>
                          <div>
                               <h3 className={`border-b border-0 mb-2 border-solid border-gray-500`}>TOP RATED</h3>
-                              <div className={`flex flex-wrap`}>
+                              <div className={`flex flex-wrap px-2`}>
                                    <div className={` ${styles.item} flex gap-2`}>
                                         <div className={`${styles.item_image}`}>
                                              <img src="https://opencart4.magentech.com/themes/so_emarket/image/cache/catalog/demo/product/funiture/4-100x100.jpg" alt="" />
                                         </div>
                                         <div className={`${styles.item_info}`}>
                                              <div className={`${styles.item_title}`}>
-                                                  <span className={`text-sm text-gray-600`}>Yulculpa Ullamco</span>
+                                                  <span className={`text-xs text-gray-600`}>Yulculpa Ullamco</span>
                                              </div>
                                              <div className={`${styles.rating}`}>5 stars</div>
-                                             <div className={`${styles.item_price} text-red-600`}>$51.09</div>
+                                             <div className={`${styles.item_price} color_blue font-semibold`}>$51.09</div>
                                         </div>
                                    </div>
                                    <div className={` ${styles.item} flex gap-2`}>
@@ -203,13 +159,13 @@ export default function Aside() {
                                         </div>
                                         <div className={`${styles.item_info}`}>
                                              <div className={`${styles.item_title}`}>
-                                                  <span className={`text-sm text-gray-600`}>Xancetta Bresao</span>
+                                                  <span className={`text-xs text-gray-600`}>Xancetta Bresao</span>
                                              </div>
                                              <div className={`${styles.rating}`}>
                                                   <span>5 stars</span>
                                              </div>
                                              <div className={`${styles.item_price}`}>
-                                                  <span className={`${styles.item_price} text-red-600`}>$70.30</span>
+                                                  <span className={`${styles.item_price} color_blue font-semibold`}>$70.30</span>
                                              </div>
                                         </div>
                                    </div>
@@ -219,11 +175,11 @@ export default function Aside() {
                                         </div>
                                         <div className={`${styles.item_info}`}>
                                              <div className={`${styles.item_title}`}>
-                                                  <span className={`text-sm text-gray-600`}>Wamboudin Ribeye</span>
+                                                  <span className={`text-xs text-gray-600`}>Wamboudin Ribeye</span>
                                              </div>
                                              <div className={`${styles.rating}`}>5 stars</div>
                                              <div>
-                                                  <span className={`${styles.item_price} text-red-600`}>$57.75</span>
+                                                  <span className={`${styles.item_price} color_blue font-semibold`}>$57.75</span>
                                              </div>
                                         </div>
                                    </div>
@@ -233,11 +189,11 @@ export default function Aside() {
                                         </div>
                                         <div className={`${styles.item_info}`}>
                                              <div className={`${styles.item_title}`}>
-                                                  <span className={`text-sm text-gray-600`}>Srehenderit Dolore</span>
+                                                  <span className={`text-xs text-gray-600`}>Srehenderit Dolore</span>
                                              </div>
                                              <div className={`${styles.rating}`}>5 stars</div>
                                              <div className={`${styles.item_price}`}>
-                                                  <span className={`${styles.item_price} text-red-600`}>$50.21</span>
+                                                  <span className={`${styles.item_price} color_blue font-semibold`}>$50.21</span>
                                              </div>
                                         </div>
                                    </div>

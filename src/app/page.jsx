@@ -9,6 +9,7 @@ import Card from "@/Components/Frontend/Card/Card";
 export default function Home() {
   return (
    <main className={`relative main`}>
+      <SideBar />
       <Nav />
       <section className={`flex justify-center `}>
         <div className={`overflow-visible flex gap-8 ${styles.container}`}>
@@ -64,7 +65,6 @@ export default function Home() {
         </div>
       </section>
       <Footer />
-      <SideBar />
    </main>
   );
 }

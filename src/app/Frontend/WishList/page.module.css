@@ -1,9 +1,9 @@
 .thead {
-    border-top: 0.667px solid rgb(229, 232, 236);
+    /* border-top: 0.667px solid rgb(229, 232, 236); */
     border-bottom: 0.667px solid rgb(229, 232, 236);
 }
 
-.t_body td {
+.tbody td {
     height: 104px;
     flex-shrink: 0;
 }
@@ -35,3 +35,4 @@
 .remouve {
     width: 25px;
 }
+

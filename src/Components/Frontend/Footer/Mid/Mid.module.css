@@ -3,6 +3,10 @@
      margin: auto;
 }
 
+.parent {
+     border-top: 0.667px solid rgb(229, 231, 235);
+}
+
 .ends {
      width: 303px;
 }

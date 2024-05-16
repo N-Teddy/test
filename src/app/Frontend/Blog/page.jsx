@@ -8,12 +8,12 @@ import Article from '@/Components/Frontend/Article/Article'
 
 export default function Page() {
     return (
-        <main>
+        <main className={`main`}>
             <Nav />
             <section className={`${styles.container} flex gap-8`}>
                 <Aside />
                 <section className={``}>
-                    <div className={`py-10`}>
+                    <div className={``}>
                         <Article />
                         <Article />
                         <Article />

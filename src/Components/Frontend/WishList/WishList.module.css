@@ -1,0 +1,40 @@
+.ListItem {
+    border-bottom: 0.667px solid rgb(229, 232, 236);
+}
+
+.product_name {
+    width: 319px !important;
+}
+
+.image {
+    width: 80px;
+}
+
+.name {
+    width: 418px;
+}
+
+.price {
+    width: 193px;
+}
+
+.status {
+    width: 193px;
+}
+
+.add {
+    width: 227px;
+}
+
+.remouve {
+    width: 25px;
+}
+
+.remouve:hover {
+    color: #2b38d1;
+}
+
+.name a:hover,
+.name span:hover {
+    color: #2b38d1;
+}

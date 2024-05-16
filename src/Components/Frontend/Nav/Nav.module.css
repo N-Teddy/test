@@ -25,7 +25,7 @@
      transition: all 0.5s ease-out;
      margin-top: 10px;
      padding: 10px 20px;
-     min-width: 130px;
+     min-width: 140px;
      box-shadow: 0 0px 10px 0px rgba(0, 0, 0, 0.2);
      right: 0;
      left: auto;
@@ -39,10 +39,12 @@
 .dropdown_menu li {
      padding: 5px 0;
      color: #495057;
+     transition: all 0.2s ease-out;
 }
 
 .dropdown_menu li:hover {
      color: #2b38d1;
+     transform: translateX(15px)
 }
 
 .drop_container:hover .dropdown_menu,
@@ -64,13 +66,17 @@
 }
 
 .header_middle input {
-     width: 612px;
+     width: 662px;
      height: 1;
      border: 1.5px solid rgb(229, 232, 236);
 }
 
 .search_container {
      width: 662px;
+}
+
+.button {
+     height: 42.67px;
 }
 
 .search_container div:first-of-type::after {
@@ -85,4 +91,21 @@
 
 .header_middle {
      border-bottom: 0.667px solid rgb(229, 232, 236);
+}
+
+.count {
+     position: absolute;
+     font-size: 10px;
+     background-color: rgb(221, 56, 66);
+     padding: 2px 5px;
+     text-align: center;
+     color: white;
+     border-radius: 90px;
+     min-width: 18px;
+     font-weight: 600;
+     top: -8px;
+     right: -7px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
 }

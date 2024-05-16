@@ -13,14 +13,14 @@ import Card from '@/Components/Frontend/Card/Card'
 
 export default function page() {
     return (
-        <main>
+        <main className={`main`}>
             <Nav />
             <section className={`${styles.container} flex justify-between`}>
                 <section>
                     <Aside />
                 </section>
                 <section className={`${styles.main}`}>
-                    <div className={`mt-8`}>
+                    <div className={``}>
                         <div className={`${styles.background}`}>
                             <div className={`${styles.profile} pt-6 `}>
                                 <div className={`${styles.profile_head}  flex flex-col items-center`}>
@@ -59,7 +59,7 @@ export default function page() {
                             <div className={`mt-20 w-full px-5 flex justify-between text-white`}>
                                 <div>
                                     <input type="text" className={`py-2 pl-3  text-gray-600 rounded-l-sm w-64 `} placeholder='teddy'/>
-                                    <button className={`py-2 px-5 bg-red-600 rounded-r-sm`}>Search</button>
+                                    <button className={`py-2 px-5 bg-blue rounded-r-sm`}>Search</button>
                                 </div>
                                 <div>
                                     <div className={`text-gray-500 py-2 px-10 rounded-full bg-white`}>default sorting</div>

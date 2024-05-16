@@ -5,7 +5,7 @@ import { IoIosArrowDroprightCircle } from "react-icons/io";
 
 export default function Shop() {
     return (
-        <section className={`${styles.store_wrapper} rounded-sm`}>
+        <section className={`${styles.store_wrapper} rounded-sm bg-white`}>
             <div>
                 <div className={`${styles.store_header} py-5 px-5 relative `}>
                     <div className={`absolute -z-10 top-0`}>

@@ -3,7 +3,7 @@ import { IoMdArrowDropdown, IoIosArrowDown } from "react-icons/io";
 import { FaLock } from "react-icons/fa6";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoSearch } from "react-icons/io5";
-import { TfiReload } from "react-icons/tfi";
+import { PiStack } from "react-icons/pi";
 import { FiHeart } from "react-icons/fi";
 import { AiOutlineShoppingCart } from "react-icons/ai";
 import { IoPersonCircleOutline } from "react-icons/io5";
@@ -63,7 +63,7 @@ export default function Nav() {
                                    <div>
                                         <input className={` pl-48 pr-32 rounded-md  py-2.5  text-gray-500`} type="text" placeholder='Search for products' name="" id="" />
                                    </div>
-                                   <div className={`absolute right-0 py-2.5 px-7 bg-blue rounded-r-md text-white font-semibold text-sm`}>Search</div>
+                                   <button className={`absolute right-0 py-2.5 ${styles.button} px-7 bg-blue rounded-r-md text-white font-semibold text-sm`}>Search</button>
                               </div>
 
                               <div className={` `}>
@@ -74,8 +74,12 @@ export default function Nav() {
                                         </button>
                                         <div className={`${styles.dropdown_menu}`}>
                                              <ul>
-                                                  <li>LOGIN</li>
-                                                  <li>REGISTER</li>
+                                                  <li>
+                                                       <Link href='/Frontend/LogIn'>LOGIN</Link>
+                                                  </li>
+                                                  <li>
+                                                       <Link href='/Frontend/Register'>REGISTER</Link>
+                                                  </li>
                                              </ul>
                                         </div>
                                    </li>
@@ -98,24 +102,27 @@ export default function Nav() {
                                    <nav className={`${styles.mid_nav}`}>
                                         <ul className={`flex  py-2.5 gap-6`}>
                                              <li>
-                                                  <Link href='/'>Home</Link>
+                                                  <Link href='/'>HOME</Link>
                                              </li>
                                              <li>
-                                                  <Link href='/Frontend/ShopList'>Shop List</Link>
+                                                  <Link href='/Frontend/ShopList'>SHOP LIST</Link>
                                              </li>
                                              <li>
-                                                  <Link href='/Frontend/Blog'>Blog</Link>
+                                                  <Link href='/Frontend/Blog'>BLOG</Link>
                                              </li>
                                              <li>
                                                   {/* products */}
-                                                  <Link href='/Frontend/Shop'>shop</Link>
+                                                  <Link href='/Frontend/Shop'>SHOP</Link>
                                              </li>
                                              <li>
                                                   {/* Specials */}
-                                                  <Link href='/Frontend/Cart'>Cart</Link>
+                                                  <Link href='/Frontend/Cart'>CART</Link>
                                              </li>
                                              <li>
-                                                  <Link href='/Frontend/Checkout'>Checkout</Link>
+                                                  <Link href='/Frontend/Checkout'>CHECKOUT</Link>
+                                             </li>
+                                             <li>
+                                                  <Link href='/Frontend/Details'>DETAILS</Link>
                                              </li>
                                         </ul>
                                    </nav>
@@ -123,13 +130,20 @@ export default function Nav() {
                               {/*  */}
                               <div>
                                    <div className={`flex gap-6 items-center`}>
-                                        <div className={`${styles.icons}`}><TfiReload size={20} /></div>
-                                        <div className={`${styles.icons}`}>
-                                             <Link href='/Frontend/WishList'><FiHeart size={25} /></Link>
+                                        <div className={`${styles.icons} relative`}>
+                                             <PiStack size={25} />
+                                             <span className={`${styles.count} absolute`}>0</span>
                                         </div>
-                                        <div className={`flex items-center ${styles.icons} flex gap-1 items-center`}>
-                                             <div>
+                                        <div className={`${styles.icons} relative`}>
+                                             <Link href='/Frontend/WishList'>
+                                                  <FiHeart size={25} />
+                                                  <span className={`${styles.count} absolute`}>0</span>
+                                             </Link>
+                                        </div>
+                                        <div className={`flex items-center ${styles.icons} flex gap-3 items-center`}>
+                                             <div className={`relative`}>
                                                   <AiOutlineShoppingCart size={30} />
+                                                  <span className={`${styles.count} -top-3`}>0</span>
                                              </div>
                                              <div>
                                                   <p className={`text-xs`}>Your Card</p>

@@ -6,7 +6,7 @@ import { AiOutlineMessage } from "react-icons/ai";
 
 export default function Article() {
   return (
-      <section className={`mb-8 flex`}>
+      <section className={`mb-8 flex bg-white rounded-md overflow-hidden`}>
           <div className={`${styles.image}`}>
               <img src="https://opencart4.magentech.com/themes/so_emarket/image/catalog/blog/7.jpg" alt="" />
           </div>
@@ -17,7 +17,7 @@ export default function Article() {
               <div className={`pb-3 text-gray-400 flex gap-10 border-b border-0 border-solid border-gray-300`}>
                   <span className={`${styles.author} flex gap-3 items-center text-xs`}>
                       <IoPersonCircleOutline size={20} />
-                      <p>Posted by ngangman teddy</p>
+                      <p>Posted by <span className={`font-semibold`}>ngangman teddy</span></p>
                   </span>
                   <span className={`${styles.comment_count} flex items-center gap-3 text-xs`}>
                       <AiOutlineMessage size={20} />
@@ -27,7 +27,7 @@ export default function Article() {
               <p className={`text-sm break-words mt-1 mb-4 leading-7 text-gray-600`}>
                   Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam volu...
               </p>
-              <div className={`text-sm text-red-500`}>
+              <div className={`text-sm color_blue`}>
                   Read More
               </div>
           </div>
